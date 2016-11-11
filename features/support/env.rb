@@ -9,7 +9,7 @@ Faker::Config.locale = 'pt-BR'
 
 Capybara.default_driver = :selenium
 Capybara.app_host = 'https://www.youse.com.br'
-Capybara.default_max_wait_time = 5
+Capybara.default_max_wait_time = 15
 Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(app, :browser => :chrome)
 end
