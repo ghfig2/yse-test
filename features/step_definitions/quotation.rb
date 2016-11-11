@@ -1,3 +1,10 @@
+Dado(/^que eu esteja logado$/) do
+	@account = Account.new
+	@account.load
+	@account.my_account.click
+	@account.login
+end
+
 Dado(/^que eu esteja lendo sobre o "([^"]*)"$/) do |insurance|
 	@product = Product.new(insurance)
 	@product.load

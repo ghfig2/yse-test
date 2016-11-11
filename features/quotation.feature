@@ -7,7 +7,8 @@ Funcionalidade: Cotação de seguros
 
 
 	Cenário: Cotando um seguro de vida
-		Dado que eu esteja lendo sobre o "Seguro Vida"
+		Dado que eu esteja logado
+		E que eu esteja lendo sobre o "Seguro Vida"
 		E decida fazer uma cotação online
 		Então vou preencher a tela "1" de "Cotação"
 		E vou preencher a tela "2" de "Planos pra vc"
