@@ -9,7 +9,7 @@ Dado(/^escolha a opção de criar uma nova conta$/) do
 end
 
 Dado(/^preencha o cadastro$/) do
-  @account.signup
+	@account.signup
 end
 
 Então(/^minha conta será criada$/) do
@@ -17,7 +17,7 @@ Então(/^minha conta será criada$/) do
 end
 
 Dado(/^preencha o formulário de login$/) do
-  @account.login
+	@account.login
 end
 
 Então(/^eu estarei logado$/) do

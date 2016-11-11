@@ -6,9 +6,10 @@ include RSpec::Matchers
 	attr_accessor :name, :tag, :path
 	set_url "/"
 	element  :content_box_title, "h1.title"
-	element  :content_about, "#sobre-o-segguro"
+	element  :content_about, "#sobre-o-seguro"
 	element  :content_services, "#servicos"
 	element  :content_questions, "#duvidas"
+	element  :quotation,  "a", text: "COTAÇÃO ONLINE"
  
 
 	def initialize(product)

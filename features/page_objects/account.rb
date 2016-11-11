@@ -25,15 +25,15 @@ include RSpec::Matchers
 		signup_form_submit.click
 	end
 
-	def login
-		login_form_email.set $email
+	def login (email = $email, password = $password)
+		login_form_email.set email
 		login_form_next_step.click
-		login_form_password.set $password
+		login_form_password.set password
 		login_form_submit.click
 	end
 
 	def am_I_logged_in?
-		page.should have_content "Olá, #{$name}"
+		expect(page).to have_content "Olá, #{$name}"
 	end
 
 end
