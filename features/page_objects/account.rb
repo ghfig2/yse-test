@@ -33,7 +33,7 @@ include RSpec::Matchers
 	end
 
 	def am_I_logged_in?
-		expect(page).to have_content "Olá, #{$name}"
+		expect(page).to have_content "Olá, #{$name.split.first}"
 	end
 
 end
