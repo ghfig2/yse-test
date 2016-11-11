@@ -16,6 +16,12 @@ $ bundle install
 ```
 
 ### Running tests:
+
+* email and password are mandatory
+* use a new e-mail
+* password > 7 characters
+* name, cpf and date_of_birth are optional but the last step requires real data to pass
+
 ```
 $ cucumber email="name@site.com" password="12345678" 
 ```
