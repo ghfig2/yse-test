@@ -32,11 +32,8 @@ module Quotation
 		def fill
 			date_of_birth.set $date_of_birth
 			occupation.click
-			# sleep 2
 			occupation_box.set "Outra profissão"
-			# sleep 2
 			occupation_choice.click
-			# sleep 2
 			salary.select("Até R$ 800,00")
 			marital_status.select("Não quero informar")
 		end
