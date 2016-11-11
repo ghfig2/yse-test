@@ -1,4 +1,4 @@
-Dado(/^que escolha visitar a página do "([^"]*)"$/) do |insurance|
+Dado(/^que eu escolha visitar a página do "([^"]*)"$/) do |insurance|
 	@product = Product.new(insurance)
 	@product.load
 	@product.go_to
